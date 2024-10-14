@@ -16,9 +16,11 @@ connectDatabase();
 app.use(cors());
 app.use(express.json());
 
+
 app.use(cors({
-  origin:'https://bennyqsystemsprojectfrontend.onrender.com' , // Replace with your frontend URL
-  credentials: true
+  origin: 'https://bennyqsystemsprojectfrontend.onrender.com', // your frontend URL
+  methods: ['GET', 'POST', 'PUT', 'DELETE'],
+  credentials: true,
 }));
 
 
