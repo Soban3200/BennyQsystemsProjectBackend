@@ -16,6 +16,11 @@ connectDatabase();
 app.use(cors());
 app.use(express.json());
 
+app.use(cors({
+  origin:'https://bennyqsystemsprojectfrontend.onrender.com' , // Replace with your frontend URL
+  credentials: true
+}));
+
 
 // Use routes
 app.use('/api/v1', products); // PC product routes
