@@ -1,0 +1,219 @@
+
+  [
+    {
+      "name": "Dell XPS 13",
+      "price": "999.99",
+      "description": "Dell XPS 13, 13.3-inch FHD Display, Intel Core i7, 16GB RAM, 512GB SSD.",
+      "ratings": "4.7",
+      "images": [
+        { "image": "/images/products/1.jpg" }
+      ],
+      "category": "Laptop",
+      "seller": "Dell",
+      "stock": "50",
+      "numOfReviews": "4321",
+      "createdAt": "2024-09-10T10:00:00Z"
+    },
+    {
+      "name": "HP Omen 15",
+      "price": "1299.99",
+      "description": "HP Omen 15, 15.6-inch FHD, Intel Core i7, 16GB RAM, 1TB SSD, NVIDIA RTX 2060.",
+      "ratings": "4.5",
+      "images": [
+        { "image": "/images/products/2.jpg" }
+      ],
+      "category": "Gaming Laptop",
+      "seller": "HP",
+      "stock": "30",
+      "numOfReviews": "1890",
+      "createdAt": "2024-08-15T12:00:00Z"
+    },
+    {
+      "name": "Apple MacBook Pro 14-inch",
+      "price": "1999.00",
+      "description": "Apple MacBook Pro, M1 Pro Chip, 16GB RAM, 512GB SSD, macOS.",
+      "ratings": "4.8",
+      "images": [
+        { "image": "/images/products/3.jpg" }
+      ],
+      "category": "Laptop",
+      "seller": "Apple",
+      "stock": "100",
+      "numOfReviews": "5678",
+      "createdAt": "2024-07-20T09:30:00Z"
+    },
+    {
+      "name": "Logitech MK270 Wireless Keyboard and Mouse Combo",
+      "price": "29.99",
+      "description": "Logitech MK270 Combo, Wireless Keyboard and Mouse, Long Battery Life, 2.4GHz.",
+      "ratings": "4.6",
+      "images": [
+        { "image": "/images/products/4.jpg" }
+      ],
+      "category": "Wireless Keyboard and Mouse",
+      "seller": "Logitech",
+      "stock": "300",
+      "numOfReviews": "9876",
+      "createdAt": "2024-09-01T15:00:00Z"
+    },
+    {
+      "name": "Microsoft Sculpt Ergonomic Desktop",
+      "price": "89.99",
+      "description": "Microsoft Sculpt Ergonomic Keyboard and Mouse, Wireless, Split Keyset, Cushioned Palm Rest.",
+      "ratings": "4.4",
+      "images": [
+        { "image": "/images/products/5.jpg" }
+      ],
+      "category": "Ergonomic Keyboard and Mouse",
+      "seller": "Microsoft",
+      "stock": "150",
+      "numOfReviews": "5678",
+      "createdAt": "2024-07-30T12:00:00Z"
+    },
+    {
+      "name": "Razer Cynosa V2 and Basilisk X Hyperspeed Combo",
+      "price": "119.99",
+      "description": "Razer Cynosa V2 Keyboard and Basilisk X Hyperspeed Mouse, RGB, Wireless.",
+      "ratings": "4.5",
+      "images": [
+        { "image": "/images/products/6.jpg" }
+      ],
+      "category": "Gaming Keyboard and Mouse",
+      "seller": "Razer",
+      "stock": "200",
+      "numOfReviews": "3456",
+      "createdAt": "2024-06-20T09:00:00Z"
+    },
+    {
+      "name": "Samsung Odyssey G7 27-inch Curved Gaming Monitor",
+      "price": "599.99",
+      "description": "Samsung Odyssey G7, 27-inch QHD, 240Hz, 1ms, G-Sync, HDR600.",
+      "ratings": "4.8",
+      "images": [
+        { "image": "/images/products/7.jpg" }
+      ],
+      "category": "Gaming Monitor",
+      "seller": "Samsung",
+      "stock": "80",
+      "numOfReviews": "7654",
+      "createdAt": "2024-05-15T11:00:00Z"
+    },
+    {
+      "name": "LG 27UK850-W 27-inch 4K Monitor",
+      "price": "499.99",
+      "description": "LG 27UK850-W, 27-inch 4K UHD, HDR10, USB-C, IPS Display.",
+      "ratings": "4.7",
+      "images": [
+        { "image": "/images/products/8.jpg" }
+      ],
+      "category": "4K Monitor",
+      "seller": "LG",
+      "stock": "120",
+      "numOfReviews": "5432",
+      "createdAt": "2024-03-10T10:00:00Z"
+    },
+    {
+      "name": "Acer Predator XB273K 27-inch Gaming Monitor",
+      "price": "899.99",
+      "description": "Acer Predator XB273K, 27-inch 4K UHD, 144Hz, G-Sync, HDR400.",
+      "ratings": "4.6",
+      "images": [
+        { "image": "/images/products/9.jpg" }
+      ],
+      "category": "Gaming Monitor",
+      "seller": "Acer",
+      "stock": "50",
+      "numOfReviews": "2345",
+      "createdAt": "2024-04-05T13:00:00Z"
+    },
+    {
+      "name": "ASUS ProArt PA278QV 27-inch Monitor",
+      "price": "349.99",
+      "description": "ASUS ProArt PA278QV, 27-inch WQHD, 100% sRGB, Adaptive-Sync.",
+      "ratings": "4.9",
+      "images": [
+        { "image": "/images/products/10.jpg" }
+      ],
+      "category": "Professional Monitor",
+      "seller": "ASUS",
+      "stock": "70",
+      "numOfReviews": "4321",
+      "createdAt": "2024-02-20T14:00:00Z"
+    },
+    {
+      "name": "Intel Core i9-11900K",
+      "price": "549.99",
+      "description": "Intel Core i9-11900K, 8 Cores, 16 Threads, 3.5 GHz Base, 5.3 GHz Boost, LGA 1200.",
+      "ratings": "4.8",
+      "images": [
+        { "image": "/images/products/11.jpg" }
+      ],
+      "category": "Processor",
+      "seller": "Intel",
+      "stock": "200",
+      "numOfReviews": "12345",
+      "createdAt": "2024-01-05T08:00:00Z"
+    },
+    {
+      "name": "AMD Ryzen 9 5900X",
+      "price": "449.99",
+      "description": "AMD Ryzen 9 5900X, 12 Cores, 24 Threads, 3.7 GHz Base, 4.8 GHz Boost, AM4 Socket.",
+      "ratings": "4.9",
+      "images": [
+        { "image": "/images/products/12.jpg" }
+      ],
+      "category": "Processor",
+      "seller": "AMD",
+      "stock": "180",
+      "numOfReviews": "8765",
+      "createdAt": "2024-03-15T09:00:00Z"
+    },
+    {
+      "name": "Intel Core i7-11700K",
+      "price": "379.99",
+      "description": "Intel Core i7-11700K, 8 Cores, 16 Threads, 3.6 GHz Base, 5.0 GHz Boost, LGA 1200.",
+      "ratings": "4.7",
+      "images": [
+        { "image": "/images/products/13.jpg" }
+      ],
+      "category": "Processor",
+      "seller": "Intel",
+      "stock": "250",
+      "numOfReviews": "5432",
+      "createdAt": "2024-05-01T10:00:00Z"
+    },
+    {
+      "name": "AMD Ryzen 7 5800X",
+      "price": "329.99",
+      "description": "AMD Ryzen 7 5800X, 8 Cores, 16 Threads, 3.8 GHz Base, 4.7 GHz Boost, AM4 Socket.",
+      "ratings": "4.8",
+      "images": [
+        { "image": "/images/products/14.jpg" }
+      ],
+      "category": "Processor",
+      "seller": "AMD",
+      "stock": "220",
+      "numOfReviews": "6789",
+      "createdAt": "2024-06-10T11:00:00Z"
+    },
+  
+  
+    {
+      "name": "Corsair Vengeance LPX 16GB (1x16GB) DDR4 3200MHZ ",
+      "price": "89.99",  
+      "description": "Corsair Vengeance LPX is designed for high-performance overclocking. This 16GB (1x16GB) DDR4 3200MHz.",
+      "ratings": "4.6",
+      "images": [
+        {
+          "image": "/images/products/15.jpg"
+        }
+      ],
+      "category": "Memory",
+      "seller": "Corsair Store",
+      "stock": "10",
+      "numOfReviews": "14111",
+      "createdAt": "2024-09-15T00:00:00Z"
+    }
+    
+  ]
+  

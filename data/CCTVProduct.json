@@ -1,0 +1,170 @@
+[
+    {
+        "name": "Dome CCTV Camera",
+        "price": "150",
+        "description": "Indoor dome-shaped camera with 1080p resolution.",
+        "ratings": "4.5",
+        "images": [
+            {"image": "/images/cctvProducts/1.jpg"}
+        ],
+        "category": "CCTV Camera",
+        "seller": "SecurityTech",
+        "stock": "25",
+        "numOfReviews": "320",
+        "createdAt": "2023-09-12T10:00:00Z"
+    },
+    {
+        "name": "Bullet CCTV Camera",
+        "price": "200",
+        "description": "Outdoor bullet-style camera with night vision.",
+        "ratings": "4.7",
+        "images": [
+            {"image": "/images/cctvProducts/2.jpg"}
+        ],
+        "category": "CCTV Camera",
+        "seller": "SafeHome Solutions",
+        "stock": "18",
+        "numOfReviews": "410",
+        "createdAt": "2023-09-15T12:00:00Z"
+    },
+    {
+        "name": "Pan-Tilt-Zoom (PTZ) Camera",
+        "price": "350",
+        "description": "High-end PTZ camera with 20x optical zoom.",
+        "ratings": "4.9",
+        "images": [
+            {"image": "/images/cctvProducts/3.jpg"}
+        ],
+        "category": "CCTV Camera",
+        "seller": "WatchTower",
+        "stock": "10",
+        "numOfReviews": "150",
+        "createdAt": "2023-09-20T09:00:00Z"
+    },
+    {
+        "name": "CCTV DVR Recorder",
+        "price": "100",
+        "description": "4-channel DVR recorder compatible with multiple camera systems.",
+        "ratings": "4.3",
+        "images": [
+            {"image": "/images/cctvProducts/4.jpg"}
+        ],
+        "category": "CCTV Accessories",
+        "seller": "TechProtect",
+        "stock": "35",
+        "numOfReviews": "85",
+        "createdAt": "2023-08-01T08:00:00Z"
+    },
+    {
+        "name": "Power Supply Unit for CCTV",
+        "price": "40",
+        "description": "12V power supply for up to 8 CCTV cameras.",
+        "ratings": "4.4",
+        "images": [
+            {"image": "/images/cctvProducts/5.jpg"}
+        ],
+        "category": "CCTV Accessories",
+        "seller": "SecurityParts Co.",
+        "stock": "60",
+        "numOfReviews": "110",
+        "createdAt": "2023-07-22T11:30:00Z"
+    },
+    {
+        "name": "CCTV Camera Wall Mount",
+        "price": "15",
+        "description": "Universal wall mount for various CCTV models.",
+        "ratings": "4.2",
+        "images": [
+            {"image": "/images/cctvProducts/6.jpg"}
+        ],
+        "category": "CCTV Accessories",
+        "seller": "MountMasters",
+        "stock": "75",
+        "numOfReviews": "200",
+        "createdAt": "2023-06-18T14:00:00Z"
+    },
+    {
+        "name": "Wireless IP CCTV Camera",
+        "price": "180",
+        "description": "Wireless IP camera with cloud storage compatibility.",
+        "ratings": "4.8",
+        "images": [
+            {"image": "/images/cctvProducts/7.jpg"}
+        ],
+        "category": "CCTV Camera",
+        "seller": "NetWatch",
+        "stock": "40",
+        "numOfReviews": "320",
+        "createdAt": "2023-09-10T10:30:00Z"
+    },
+    {
+        "name": "CCTV BNC Connector",
+        "price": "5",
+        "description": "High-quality BNC connector for coaxial CCTV cables.",
+        "ratings": "4.1",
+        "images": [
+            {"image": "/images/cctvProducts/8.jpg"}
+        ],
+        "category": "CCTV Accessories",
+        "seller": "CableWorks",
+        "stock": "120",
+        "numOfReviews": "75",
+        "createdAt": "2023-06-25T08:00:00Z"
+    },
+    {
+        "name": "CCTV Hard Drive (1TB)",
+        "price": "80",
+        "description": "Surveillance-grade hard drive for CCTV DVRs and NVRs.",
+        "ratings": "4.5",
+        "images": [
+            {"image": "/images/cctvProducts/9.jpg"}
+        ],
+        "category": "CCTV Accessories",
+        "seller": "DataStorage Pro",
+        "stock": "30",
+        "numOfReviews": "210",
+        "createdAt": "2023-04-15T12:30:00Z"
+    },
+    {
+        "name": "POE Switch for CCTV",
+        "price": "120",
+        "description": "8-port Power-over-Ethernet switch for IP cameras.",
+        "ratings": "4.6",
+        "images": [
+            {"image": "/images/cctvProducts/10.jpg"}
+        ],
+        "category": "CCTV Accessories",
+        "seller": "Network Solutions",
+        "stock": "28",
+        "numOfReviews": "140",
+        "createdAt": "2023-05-18T15:00:00Z"
+    },
+    {
+        "name": "CCTV Ethernet Cable (100ft)",
+        "price": "30",
+        "description": "High-quality 100ft Ethernet cable for CCTV systems.",
+        "ratings": "4.4",
+        "images": [
+            {"image": "/images/cctvProducts/11.jpg"}
+        ],
+        "category": "CCTV Accessories",
+        "seller": "CableExpress",
+        "stock": "80",
+        "numOfReviews": "180",
+        "createdAt": "2023-06-05T10:15:00Z"
+    },
+    {
+        "name": "CCTV Junction Box",
+        "price": "25",
+        "description": "Waterproof junction box for safe CCTV camera wiring.",
+        "ratings": "4.5",
+        "images": [
+            {"image": "/images/cctvProducts/12.jpg"}
+        ],
+        "category": "CCTV Accessories",
+        "seller": "SecureFix",
+        "stock": "50",
+        "numOfReviews": "95",
+        "createdAt": "2023-07-08T08:45:00Z"
+    }
+]
