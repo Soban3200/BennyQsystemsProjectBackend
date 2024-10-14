@@ -28,6 +28,9 @@ app.use(cors({
 app.use('/api/v1', products); // PC product routes
 app.use('/api/v1', orders); // Order routes
 app.use('/api/v1', cctvProducts); // CCTV product routes
+app.get('/', (req, res) => {
+  res.send('Backend is running');
+});
 
 app.listen(process.env.PORT, () => {
     console.log(`Server running on port ${process.env.PORT} in ${process.env.NODE_ENV}`);
