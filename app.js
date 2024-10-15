@@ -28,18 +28,11 @@ app.use('/api/v1', products); // PC product routes
 app.use('/api/v1', orders); // Order routes
 app.use('/api/v1', cctvProducts); // CCTV product routes
 
-// Serve static files for frontend in production
-// if (process.env.NODE_ENV === 'production') {
-//   app.use(express.static(path.join(__dirname, 'frontend', 'dist')));
 
-//   app.get('*', (req, res) => {
-//     res.sendFile(path.resolve(__dirname, 'frontend', 'dist', 'index.html'));
-//   });
-// } else {
-//   app.get('/', (req, res) => {
-//     res.send('Backend is running');
-//   });
-// }
+   app.get('/', (req, res) => {
+     res.send('Backend is running');
+  });
+
 
 // Start the server on the specified port
 const PORT = process.env.PORT || 8000; // Fallback to port 8000 if PORT is not set
