@@ -2,15 +2,18 @@ const express = require('express');
 const dotenv = require('dotenv');
 const path = require('path');
 const connectDatabase = require('./config/connectDatabase');
-const products = require('./routes/product'); 
-const orders = require('./routes/order'); 
-const cctvProducts = require('./routes/cctvProductRoutes'); 
+const products = require('./routes/product');
+const orders = require('./routes/order');
+const cctvProducts = require('./routes/cctvProductRoutes');
 const cors = require('cors');
 
+// Load environment variables
 dotenv.config({ path: path.join(__dirname, 'config', 'config.env') });
 
+// Initialize Express app
 const app = express();
 
+// Connect to the database
 connectDatabase();
 
 // CORS configuration for specific frontend URL
@@ -20,6 +23,7 @@ app.use(cors({
   credentials: true,
 }));
 
+// Parse incoming JSON requests
 app.use(express.json());
 
 // Serve static files from the frontend's dist directory
