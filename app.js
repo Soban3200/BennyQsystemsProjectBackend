@@ -13,15 +13,14 @@ const app = express();
 
 connectDatabase();
 
-app.use(cors());
-app.use(express.json());
-
 // CORS configuration for specific frontend URL
 app.use(cors({
   origin: 'https://bennyqsystemsprojectfrontend.onrender.com',
   methods: ['GET', 'POST', 'PUT', 'DELETE'],
   credentials: true,
 }));
+
+app.use(express.json());
 
 // Serve static files from the frontend's dist directory
 const staticPath = path.join(__dirname, '../frontend/dist');
@@ -32,9 +31,9 @@ app.use('/api/v1', products);
 app.use('/api/v1', orders);
 app.use('/api/v1', cctvProducts);
 
-// Serve index.html for any other route
+// Serve index.html for any other route (ensure this is last)
 app.get('*', (req, res) => {
-  const filePath = path.join(__dirname, '../frontend/dist/index.html');
+  const filePath = path.join(staticPath, 'index.html'); // Use staticPath here
   console.log('Serving file from path:', filePath);
   res.sendFile(filePath);
 });
