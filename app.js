@@ -13,29 +13,22 @@ const app = express();
 
 connectDatabase();
 
-// CORS middleware
 app.use(cors());
 app.use(express.json());
+
+// Serve static files from the frontend's dist directory
+app.use(express.static(path.join(__dirname, '..', 'frontend', 'dist')));
 
 // Use routes
 app.use('/api/v1', products); // PC product routes
 app.use('/api/v1', orders); // Order routes
 app.use('/api/v1', cctvProducts); // CCTV product routes
 
-// Serve frontend static files
-app.use(express.static(path.join(__dirname, '..', 'frontend', 'dist')));
-
-// Catch-all route to serve index.html for any non-API routes
+// Serve index.html for all other routes
 app.get('*', (req, res) => {
-  res.sendFile(path.resolve(__dirname, '..', 'frontend', 'dist', 'index.html'));
+  res.sendFile(path.join(__dirname, '..', 'frontend', 'dist', 'index.html'));
 });
 
-// Default route
-app.get('/', (req, res) => {
-  res.send('Backend is running');
-});
-
-// Start server
 app.listen(process.env.PORT, () => {
   console.log(`Server running on port ${process.env.PORT} in ${process.env.NODE_ENV}`);
 });
