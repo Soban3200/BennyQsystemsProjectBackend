@@ -15,7 +15,7 @@ connectDatabase();
 
 // CORS configuration for specific frontend URL
 app.use(cors({
-  origin: 'https://benny-qsystems-project-backend.vercel.app/',
+  origin: 'https://benny-qsystems-project-frontend.vercel.app/',
   methods: ['GET', 'POST', 'PUT', 'DELETE'],
   credentials: true,
 }));
