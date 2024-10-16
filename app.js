@@ -28,6 +28,9 @@ app.use(express.json());
 app.use('/api/v1', products);
 app.use('/api/v1', orders);
 app.use('/api/v1', cctvProducts);
+app.use('/', (req, res) => {
+  res.send('Backend is running');
+});
 
 // Serve index.html for any other route (ensure this is last)
 
