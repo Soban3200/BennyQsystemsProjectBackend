@@ -11,30 +11,34 @@ dotenv.config({ path: path.join(__dirname, 'config', 'config.env') });
 
 const app = express();
 
+// Connect to the database
 connectDatabase();
 
 // CORS configuration for specific frontend URL
 app.use(cors({
-  origin: 'https://benny-qsystems-project-frontend.vercel.app/',
+  origin: 'https://benny-qsystems-project-frontend.vercel.app',
   methods: ['GET', 'POST', 'PUT', 'DELETE'],
   credentials: true,
 }));
 
+// Middleware to parse JSON
 app.use(express.json());
 
-// Serve static files from the frontend's dist directory
+// Serve static files from the dist directory if you want to serve the frontend
+app.use(express.static(path.join(__dirname, 'dist'))); // Adjust this path if necessary
 
 // API routes
 app.use('/api/v1', products);
 app.use('/api/v1', orders);
 app.use('/api/v1', cctvProducts);
-app.use('/', (req, res) => {
-  res.send('Backend is running');
+
+// Catch-all route for non-existing endpoints
+app.use((req, res) => {
+  res.status(404).send('Not Found'); // Send a 404 status for non-existing routes
 });
 
-// Serve index.html for any other route (ensure this is last)
-
 // Start the server
-app.listen(process.env.PORT, () => {
-  console.log(`Server running on port ${process.env.PORT} in ${process.env.NODE_ENV}`);
+const PORT = process.env.PORT || 8000;
+app.listen(PORT, () => {
+  console.log(`Server running on port ${PORT} in ${process.env.NODE_ENV}`);
 });
