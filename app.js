@@ -15,7 +15,7 @@ connectDatabase();
 
 // CORS configuration for specific frontend URL
 app.use(cors({
-  origin: ['http://localhost:5173/','https://bennyqsystemsprojectfrontend.onrender.com'],
+  origin: 'https://bennyqsystemsprojectfrontend.onrender.com',
   methods: ['GET', 'POST', 'PUT', 'DELETE'],
   credentials: true,
 }));
