@@ -7,6 +7,7 @@ const orders = require('./routes/order');
 const cctvProducts = require('./routes/cctvProductRoutes'); 
 const cors = require('cors');
 
+// Load environment variables from .env file
 dotenv.config({ path: path.join(__dirname, 'config', 'config.env') });
 
 const app = express();
@@ -16,7 +17,7 @@ connectDatabase();
 
 // CORS configuration for specific frontend URL
 app.use(cors({
-  origin: 'https://benny-qsystems-project-frontend.vercel.app',
+  origin: 'https://benny-qsystems-project-frontend.vercel.app/',
   methods: ['GET', 'POST', 'PUT', 'DELETE'],
   credentials: true,
 }));
@@ -24,15 +25,17 @@ app.use(cors({
 // Middleware to parse JSON
 app.use(express.json());
 
-// Serve static files from the dist directory if you want to serve the frontend
-console.log('Serving static files from:', path.join(__dirname,'..','frontend', 'dist'));
-app.use(express.static(path.join(__dirname, 'dist')));
+// Serve static files from the frontend's dist directory
+const staticPath = path.join(__dirname, '..', 'frontend', 'dist');
+console.log('Serving static files from:', staticPath);
+app.use(express.static(staticPath));
 
 // API routes
 app.use('/api/v1', products);
 app.use('/api/v1', orders);
 app.use('/api/v1', cctvProducts);
 
+// Health check endpoint
 app.get('/', (req, res) => {
   res.send('API is running...');
 });
