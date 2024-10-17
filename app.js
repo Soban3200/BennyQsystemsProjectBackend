@@ -25,7 +25,8 @@ app.use(cors({
 app.use(express.json());
 
 // Serve static files from the dist directory if you want to serve the frontend
-app.use(express.static(path.join(__dirname, 'dist'))); // Adjust this path if necessary
+console.log('Serving static files from:', path.join(__dirname,'..','frontend', 'dist'));
+app.use(express.static(path.join(__dirname, 'dist')));
 
 // API routes
 app.use('/api/v1', products);
