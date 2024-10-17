@@ -32,6 +32,10 @@ app.use('/api/v1', products);
 app.use('/api/v1', orders);
 app.use('/api/v1', cctvProducts);
 
+app.get('/', (req, res) => {
+  res.send('API is running...');
+});
+
 // Catch-all route for non-existing endpoints
 app.use((req, res) => {
   res.status(404).send('Not Found'); // Send a 404 status for non-existing routes
