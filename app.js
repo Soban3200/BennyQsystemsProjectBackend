@@ -45,6 +45,12 @@ app.use((req, res) => {
   res.status(404).send('Not Found'); // Send a 404 status for non-existing routes
 });
 
+// Error handling middleware
+app.use((err, req, res, next) => {
+  console.error(err.stack); // Log the error stack
+  res.status(500).send('Internal Server Error'); // Send a 500 status for server errors
+});
+
 // Start the server
 const PORT = process.env.PORT || 8000;
 app.listen(PORT, () => {
