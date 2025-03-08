@@ -25,10 +25,7 @@ app.use(cors({
 // Middleware to parse JSON
 app.use(express.json());
 
-// Serve static files from the frontend's dist directory
-const staticPath = path.join(__dirname, '..', 'frontend', 'dist');
-console.log('Serving static files from:', staticPath);
-app.use(express.static(staticPath));
+
 
 // API routes
 app.use('/api/v1', products);
